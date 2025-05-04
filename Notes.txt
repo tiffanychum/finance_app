@@ -1,0 +1,537 @@
+# Notes
+#FinanceApp
+
+## 1. Overview: The Five Steps of Fundamental Analysis
+
+This provides a framework for the entire process:
+
+1. **Knowing the Business:** Understanding products, technology, competition, management, and the regulatory environment. (Covered in Section 2)
+2. **Analyzing Information:** Reviewing financial statements and other relevant data. (Covered in Section 3)
+3. **Forecasting Payoffs:** Predicting future financial performance (e.g., earnings, cash flows). Key aspects include measuring value added and forecasting value added. (Partially covered in Section 5 & 6)
+4. **Convert Forecasts to a Valuation:** Using models to estimate the firm's intrinsic value. (Covered in Sections 3, 4, 5)
+5. **Trading on the Valuation:** Making investment decisions (BUY, SELL, HOLD) based on comparing the estimated value to the market price.
+
+## 2. Business Analysis (Step 1)
+
+* – **Know the firm’s products**
+  * Types of products
+  * Consumer demand for the product
+  * Price elasticity of demand for the product
+  * Substitutes for the product. Is it differentiated? On price? On quality?
+  * Brand name association of the product
+  * Patent protection for the product
+* – **Know the firm’s technology**
+  * Production process
+  * Marketing process
+  * Distribution channels
+  * Supplier network
+  * Cost structure
+  * Economies of scale
+* – **Know the firm’s knowledge base**
+  * R&D, % changes
+* – **Know the firm’s industry competition**
+  * ### Porter’s (1980) Competitive Strategy framework:
+    Five forces to determine the intensity of competition in an industry
+    * – The threat of new entry
+    * – Pressure from substitute products
+    * – The bargaining power of buyers
+    * – The bargaining power of suppliers
+    * – The degree of rivalry among existing competitors.
+* – **Know the firm’s management**
+  * What is management’s track record?
+  * Is management entrepreneurial?
+  * Does management focus on shareholders’ or their own interests?
+  * Do stock compensation plans serve shareholders’ interests?
+  * What is the ethical charter under which the firm operates?
+  * How strong are the corporate governance mechanisms?
+* – **Know the firm’s political, legal and regulatory environment**
+  * The firm’s political influence
+  * Legal constraints on the firm including the antitrust law, consumer law, labor law, and environment law
+  * Regulatory constraints on the firm including product and price regulations
+  * Taxation of the business
+
+## 3. Financial Statement Analysis & Valuation Models (Steps 2, 4)
+
+### 3.1. Core Concepts: Distinguishing Operations vs. Financing
+
+It's crucial to separate activities related to the core business operations from financing activities.
+
+* **Operating Activities:** Relate to the primary revenue-generating activities (selling goods/services). Key metrics include Operating Income (OI) and Net Operating Assets (NOA).
+* **Financing Activities:** Relate to how the firm funds its operations (debt, equity). Key metrics include Net Financial Expense (NFE) and Net Financial Obligations (NFO).
+
+### 3.2. Valuation using Residual Earnings (RE)
+
+* **Residual Earnings (RE):** Measures the earnings generated above the required return for equity investors.
+  ```
+  RE_t = Comprehensive Earnings_t - (ρ_E - 1) * CSE_{t-1}
+  ```
+  Where:
+  * `ρ_E` = Required return on common equity (Cost of Equity)
+  * `CSE_{t-1}` = Common Shareholders' Equity at the beginning of the period (Book Value)
+* **Valuation Formula:**
+  ```
+  V_0 = CSE_0 + PV of future RE
+  ```
+* **Components (from Screenshot 4):**
+### Earnings Components and Corresponding Residual Earnings Measures
+
+| Net Income Component | Book Value Component | Residual Earnings Measure |
+|---------------------|----------------------|---------------------------|
+| Operating Income (OI) | Net Operating Assets (NOA) | OIt – (ρF – 1) NOAt-1 (ReOI) |
+| Net Financial Expense (NFE) | Net Financial Obligations (NFO) | NFEt – (ρD – 1) NFOt-1 (ReNFE) ~0 if measured in market value |
+| Earnings | Common Stockholders' Equity (CSE) | Earnt – (ρE – 1) CSEt-1 (RE) |
+
+* **Focus:**
+  * Residual Operating Income (ReOI) is central to valuing operations.
+  * Residual Net Financial Expense (ReNFE) is often close to zero if financial assets/liabilities are measured at market value.
+  * When Price-to-Book (P/B) = 1, RE should be zero.
+
+* **Steps in Applying the RE Model:**
+  1. Identify the book value (CSE) in the most recent balance sheet.
+  2. Forecast earnings and dividends up to a forecast horizon.
+  3. Forecast future book values from current book values and forecasts of earnings and dividends.
+  4. Calculate future residual earnings (RE or ReOI) from the forecasts.
+  5. Discount the residual earnings to present value.
+  6. Calculate a continuing value (CV) at the forecast horizon.
+  7. Discount the continuing value to the present value.
+  8. Value = Current Book Value + PV(RE) + PV(CV)
+
+### 3.3. Valuation using Abnormal Earnings Growth (AEG)
+
+* **Abnormal Earnings Growth (AEG):** Measures the growth in earnings above what's considered "normal" given the required return. Change in RE = AEG.
+* AEG is the focus for Price-to-Earnings (P/E) valuation.
+* **Valuation Formula:**
+  ```
+  V_0 = Earnings_1 / (ρ_E - 1) + PV of future AEG
+  ```
+  (Capitalized forward earnings + PV of Changes in RE)
+Earnings Components and Corresponding Abnormal Earnings Growth Measures 
+| Earnings Component          | Abnormal Earnings Growth Measure                             |
+|-----------------------------|--------------------------------------------------------------|
+| Operating income (OI)       | Abnormal operating income growth: ` [OI_t + (ρ_F - 1) * FCF_{t-1}] - ρ_F * OI_{t-1}` or `[G_t - ρ_F] * OI_{t-1}`   |
+| Net financing expense (NFE) | Abnormal net financial expense growth: `[NFE_t + (ρ_D - 1) * F_{t-1}] - ρ_D * NFE_{t-1}`   |
+| Earnings                    | Abnormal earnings growth: `[Earn_t + (ρ_E - 1) * d_{t-1}] - ρ_E * Earn_{t-1}` |
+
+* Note: `FCF` = Free Cash Flow, `G` = Growth rate, `d` = dividends, `F` = Net Financial Assets/Liabilities.
+* **Example: Tesla 
+  * Analysts use AEG to assess if earnings growth supports valuation.
+  * Example table provided shows calculation for 2021E, 2022E based on forecasts.
+  The power of growth: Valuation of Tesla
+
+  - Can earnings growth support Tesla's valuation?
+  - Calculate the AEG for 2021 and 2022:
+  
+  ```
+  Year        0       1       2       3
+             2020A   2021E   2022E   2023E
+  EPS        1.00    4.59    6.67    8.36
+  DPS        0.00    0.00    0.00    0.00
+  Cum-dividend earnings     4.59    6.67    8.36
+  Normal earnings           1.0846  4.9783  7.23
+  Abnormal earnings growth (AEG)    3.505   1.69    1.13
+  Cost of capital  8.46%
+  ```
+
+  Data source: Analysts' consensus earnings forecasts
+  CoC is based on: Beta = 2.00, Rf = 1.58%, and RM = 5.02%.
+
+
+### 3.4. Multiples and Ratios
+
+* **P/B, ROCE and Growth in Book Value:** These are interlinked. Higher ROCE relative to the required return justifies a higher P/B, often accompanied by higher book value growth.
+  (Table with company examples from `Ideation.md` can remain here)
+* **The Fed Model:** Compares Earnings Yield (E/P) to Treasury Yield.
+  > If Earnings Yield < 10-year Treasury Note Yield, stocks may be overpriced.
+* **PEG Ratio:** Compares P/E to expected earnings growth rate.
+  ```
+  PEG Ratio = (P/E) / (1-year ahead percentage earnings growth)
+  ```
+  > * Often uses a cutoff of 1.0 (< 1 buy, > 1 sell).
+  > * Very rough, assumes constant growth.
+
+## 4. The Analysis of Profitability: Decomposing ROCE (Step 2 Cont.)
+
+Return on Common Equity (ROCE) is a key measure. We decompose it to understand its drivers.
+
+**Overall Scheme**
+Return on Common Equity is driven by:
+1. Return from Operating Activities -> Return on Net Operating Assets (RNOA) -> Profit Margin (PM) & Asset Turnover (ATO) -> Gross Margin/Expense Drivers & Individual Asset/Liability Drivers
+2. Return from Financing Activities -> Financial Leverage x Spread -> Net Borrowing Cost Drivers
+
+### 4.1. Level 1: Operating vs. Financing Contribution
+
+```
+ROCE = RNOA + FLEV * SPREAD
+```
+Where:
+* **RNOA (Return on Net Operating Assets):** Measures operating performance independent of financing. `RNOA = OI / NOA` (OI = Operating Income after tax, NOA = Net Operating Assets = OA - OL)
+* **FLEV (Financial Leverage):** Measures the degree of debt financing. `FLEV = NFO / CSE` (NFO = Net Financial Obligations)
+* **SPREAD:** Measures the difference between operating return and the cost of borrowing. `SPREAD = RNOA - NBC`
+* **NBC (Net Borrowing Cost):** Effective after-tax cost of net debt. (Formula in Section 4.4)
+
+> Leverage increases ROCE *only if* the SPREAD is positive (RNOA > NBC). This benefits shareholders.
+
+### 4.2. Level 2: RNOA Decomposition & Operating Liability Leverage
+
+* **RNOA decomposed into Margin and Turnover:**
+  ```
+  RNOA = PM * ATO
+  ```
+  * **PM (Operating Profit Margin):** `OI / Sales` - Profitability of sales.
+  * **ATO (Asset Turnover):** `Sales / NOA` - Efficiency in using assets to generate sales.
+
+* **Operating Liability Leverage (OLLEV):** RNOA can be further analyzed considering operating liabilities.
+  ```
+  RNOA = ROOA + (OLLEV * OLSPREAD)
+  ```
+  * **ROOA (Return on Operating Assets):** `(OI + Implicit Interest on OL (after tax)) / OA`
+  * **OLLEV (Operating Liability Leverage):** `OL / NOA`
+  * **OLSPREAD:** `ROOA - Short-term Borrowing Rate (after tax)`
+  > Firms often benefit from operating liabilities (e.g., accounts payable) as the implicit cost (SBR) is low.
+
+* **Putting it all together:**
+  ```
+  ROCE = ROOA + (OLLEV * OLSPREAD) + (FLEV * SPREAD)
+  ```
+
+### 4.3. Level 3: Profit Margin and Asset Turnover Drivers
+
+* **Profit Margin Drivers (from Screenshot 1):**
+  ```
+  PM = Sales PM + Other Operating Income PM
+  ```
+  ```
+  Sales PM = (GM / Sales) - (Admin Exp / Sales) - (Selling Exp / Sales) - (R&D / Sales) - (Taxes / Sales) - ...
+  ```
+  * Where `GM (Gross Margin) = Sales - Cost of Sales` (Can be analyzed by product/line of business)
+  ```
+  Other Items PM = Other Operating Income / Sales
+                 = (Subsidiary Income / Sales) + (Equity Dividends / Sales) + (Special Items / Sales) + (Other Net Gain & Losses / Sales) + ...
+  ```
+  * **Identifying Core OI vs Unusual Items (from Screenshot 13):** Need to separate sustainable operating income from temporary/unusual items (e.g., restructuring charges, asset write-downs) to get **Core Operating Income**. Core OI = Core sales revenue - Core cost of sales - Core operating expenses + Core other operating income - Tax allocated to unusual items. Comprehensive Operating Income = Core OI +/- Unusual Items.
+
+* **Asset Turnover Drivers (from Screenshot 2):**
+  ```
+  1 / ATO = NOA / Sales
+          = (Cash / Sales) + (Acc. Rec. / Sales) + (Inventory / Sales) + ...
+          + (PPE / Sales) + (Subsidiary Inv. / Sales) + ...
+          - (Payables / Sales) - (Pension Oblig. / Sales) - ...
+  ```
+  > Note: The inverse of ATO (NOA/Sales) is used so individual components can be aggregated. Lower component ratios mean higher turnover/efficiency for that asset/liability relative to sales.
+
+* **Other Turnover-Related Measures (from Screenshot 2):**
+  * `Days in Acc. Receivable = Acc. Receivable / Avg. Sales per day = 365 / Accounts Receivable Turnover`
+  * `Inventory Turnover = Cost of Sales / Avg. Inventories`
+  * `Acc. Payable Turnover = Purchases / Avg. Acc. Payable`
+
+### 4.4. Analysis of Net Borrowing Cost (NBC) (from Screenshot 3)
+
+NBC is the weighted average cost of net financing.
+```
+NBC = [ (FO / NFO) * (After-tax Interest on Fin. Oblig. / FO) ]
+    - [ (FA / NFO) * (After-tax Interest on Fin. Assets / FA) ]
+    - [ (FA / NFO) * (Unrealized Gains on FA / FA) ]
+    + [ (Preferred Stock / NFO) * (Pref. Divs. / Preferred Stock) ]
+    + ...
+```
+Where:
+* FO = Financial Obligations
+* FA = Financial Assets
+* NFO = Net Financial Obligations = FO - FA
+
+## 5. Cost of Capital & Required Returns (Related to Step 4)
+
+### 5.1. Cost of Capital for Operations (ρ<sub>F</sub>) (from Screenshot 6)
+
+* Operations have **operational risk** (changes in customer demand, input costs, political uncertainty, etc.).
+* This risk determines the required return (cost of capital) to invest in operations, denoted `ρ_F`.
+* This is the firm's cost of capital before considering financing effects.
+* It's related to the **Weighted Average Cost of Capital (WACC)**:
+  ```
+  ρ_F = (V_0^E / V_0^F) * ρ_E + (V_0^D / V_0^F) * ρ_D
+  or
+  ρF = V₀ᴱ/V₀ᶠ ρE + V₀ᴰ/V₀ᶠ ρD
+  ```
+  * Uses *market values* (V) rather than book values.
+  * `V_0^F = V_0^E + V_0^D` (Total Firm Value = Equity Value + Debt Value)
+  * `ρ_E` = Cost of Equity
+  * `ρ_D` = After-tax Cost of Debt = Nominal cost of debt * (1 - t)
+    * 't' is the marginal tax rate.
+
+### 5.2. Cost of Equity Capital (ρ<sub>E</sub>) (from Screenshot 7)
+
+* Can be derived from the cost of capital for operations (`ρ_F`):
+  ```
+  ρ_E = ρ_F + (V_0^D / V_0^E) * (ρ_F - ρ_D)
+  or
+  ρE = V₀ᶠ/V₀ᴱ ρF - V₀ᴰ/V₀ᴱ ρD = ρF + V₀ᴰ/V₀ᴱ (ρF-ρD)
+  ```
+  > This views operations (`ρ_F`) as the source of risk, adjusted by the risk borne by equity investors due to leverage. `V_0^D / V_0^E` represents market leverage.
+
+* **Equity risk has two components:**
+  1. **Operating risk:** Risk inherent in the business operations (captured by `ρ_F`).
+  2. **Financing risk:** Additional risk due to leverage (captured by the spread `ρ_F - ρ_D` and the amount of leverage).
+
+### 5.3. Required Return vs. Accounting Return 
+
+* **Required Return on Equity (`ρ_E`):** Driven by `ρ_F` and market leverage (as above).
+* **Accounting Return on Equity (ROCE):** Driven by RNOA and *book* leverage.
+  ```
+  ROCE = RNOA + (NFO / CSE) * (RNOA - NBC)
+  ```
+  > Leverage increases *both* accounting return (if spread > 0) and required return. High risk -> High (required) return.
+
+## 6. Enterprise Valuation & The Impact of Leverage (Steps 4, 5)
+
+### 6.1. Valuing Operations (Enterprise Valuation)
+
+* **Focus on ReOI:** Because financing activities typically don't add value (assuming fair terms) and P/B or P/E can be distorted by leverage, it's often better to value the operations directly.
+  ```
+  V_0_Operations = NOA_0 + PV of future ReOI
+  ```
+  Where `ReOI_t = OI_t - (ρ_F - 1) * NOA_{t-1}`
+* **Value of Equity:**
+  ```
+  V_0_Equity = V_0_Operations - V_0_Net Debt
+  ```
+  (Value of Operations - Market Value of Net Financial Obligations)
+* **Advantages:**
+  * Focuses forecasting on operations (OI, NOA).
+  * Required return (`ρ_F`) doesn't need adjustment for changing leverage during the forecast.
+  * Assumes NFO on the balance sheet is close to market value.
+
+### 6.2. Effect of Leverage on Valuation 
+
+* Leverage changes the *distribution* of value between debt and equity but doesn't create value itself (assuming fair financing costs).
+* **Example:** Firm valuation using ReOI with 9% cost of capital for operations (`ρ_F`) and 5% after-tax cost of debt (`ρ_D`).
+  * Initial state (e.g., no debt): Calculate ReOI, PV of ReOI, Value of Equity.
+  * Leveraged state (e.g., takes on debt to repurchase shares):
+    * Cost of Equity (`ρ_E`) increases due to higher leverage: `ρ_E = ρ_F + (NFO / CSE) * (ρ_F - ρ_D)`. (In the example, goes from 9% to 10%).
+    * Net Income changes due to interest expense.
+    * Book Value (CSE) changes.
+    * Residual Earnings (RE, using `ρ_E`) changes.
+    * **Total Value of Equity remains the same** if the transaction (debt issuance, share repurchase) occurs at fair value.
+    * Value per share *remains the same* if repurchase is at fair value.
+    * ROCE increases (due to positive spread).
+    * P/B increases (because P stays same, B decreases).
+    * P/E decreases (because E (required return) increases, P stays same).
+
+### 6.3. Share Repurchases 
+The Effect of Change in Leverage on Equity Value: RE Valuation
+
+ReOI Valuation of a Firm with 9% cost of capital for operations and 5% after-tax cost of debt:
+
+```
+Net operating assets         1,300
+Net financial obligations     300
+Common shareholders' equity 1,000
+
+Operating income              135   135   135 ...→
+Net Financial expense (300 x .05)  15    15    15 ...→
+Earnings                      120   120   120 ...→
+
+Residual operating income, ReOI (.09) 18    18    18 ...→
+
+PV of ReOI (18/.09)           200
+
+Value of common equity      1,200
+
+Value per share (on 600 shares) 2.00
+```
+
+### Leverage Demonstration in RE Valuation (cont.)
+
+RE Valuation of the Same Firm:
+
+```
+Cost of equity capital = 9.0% + 300/1,200 × [9.0% – 5.0%] = 10.0%
+
+Net operating assets     1,300
+Net financial obligations   300
+Common shareholders' equity 1,000
+
+Earnings                   120   120   120 ...→
+
+ROCE                       12%   12%   12% ...→
+
+Residual earnings, RE (.10)  20    20    20 ...→
+
+PV of RE (20/.10)          200
+
+Value of common equity    1,200
+
+Value per share (on 600 shares) 2.00
+
+P/B = 1.2
+```
+
+### Reebok Stock Repurchase
+
+```
+                          Valuation with     "As If" Valuation
+                          Stock Repurchase   without Stock Repurchase
+Value of NOA              3,472              3,472
+Book value of NFO           720                119
+Value of equity           2,752              3,353
+Value of minority interest  210                210
+Value of common equity    2,549              3,143
+
+Value per share           45.52              43.33
+```
+
+If the 16.7 million shares had been repurchased at $43.33 rather than $36, the comparison is:
+
+```
+                          Valuation with     Valuation without
+                          Repurchase at $43.33 per share  Repurchase
+Value of NOA              3,472              3,472
+Book value of NFO           843                119
+Value of equity           2,629              3,353
+Value of minority interest  210                210
+Value of common equity    2,419              3,143
+
+Value per share           43.33              43.33
+```
+
+* **Do they add value?** Generally NO, if done at fair market value. They just change leverage and redistribute value.
+* **Exception:** Repurchasing shares below fair value *can* add value to remaining shareholders (transfers wealth from selling shareholders). Example compares Reebok repurchase at $43.33 vs. $36.
+* **Why do managers do it?**
+  * Pay out cash (flexible alternative to dividends).
+  * Offset dilution from stock options (though value per share isn't truly diluted if options were issued fairly).
+  * **Increase EPS/ROCE:** *This does not create value* but may boost managers' compensation tied to these metrics. **Bad practice!**
+  * Signal positive future prospects (market timing).
+
+* **The Three Caveats:** Beware of earnings growth created by:
+  1. Investment (if return < cost of capital)
+  2. Accounting methods
+  3. **Financial leverage**
+  > None of these necessarily create shareholder value.
+
+## 7. Forecasting (Step 3)
+
+### 7.1. Full-information Forecasting
+
+* Need to forecast components needed for valuation (e.g., ReOI or FCF).
+* **Focus Points (from Screenshot 12):**
+  1. **Focus on ReOI Drivers:** RNOA (driven by PM, ATO) and NOA growth. Aim to grow Sales and Core Sales PM with high ATO.
+  2. **Focus on Change:** What will be different in the future?
+  3. **Focus on Key Drivers:** Varies by industry (See Screenshot 15 table: e.g., Airlines - Load factors; Retail - Sales/ATO; Pharma - R&D).
+  4. **Focus on Choice vs. Conditions:** Management makes strategic choices within given market/economic conditions.
+8. Industry Analysis and Key Drivers
+
+### Focus on Key Drivers
+
+Some firms have one or two drivers that are key to driving ReOI. Analysts focus on these key drivers:
+
+| Industry | Key Economic Factors | Key ReOI Drivers |
+|----------|---------------------|------------------|
+| Airlines | Load factors and fares | Sales and ATO |
+| Automobiles | Model design and production efficiency | Sales and margins |
+| Beverages | Brand management and product innovation | Sales |
+| Cellular Phones | Population covered (POP) and churn rates | Sales and ATO |
+| Commercial Real Estate | Square footage and occupancy rates | Sales and ATO |
+| Computers | Technology path and competition | Sales and margins |
+| Fashion Clothing | Brand management | Sales and margins |
+| Internet Commerce | Hits per hour | Sales and ATO |
+| Non-fashion clothing | Production efficiency | Margins |
+| Pharmaceuticals | Research and development | Sales |
+| Retail | Retail space and sales per square foot | Sales and ATO |
+
+## 9. Fundamental Analysis Framework
+
+### The Five Steps of Fundamental Analysis (Ch. 03)
+
+1. **Knowing the Business**
+   - The Products
+   - The Knowledge Base
+   - The Competition
+   - The Regulatory Constraints
+
+2. **Analyzing Information**
+   - In Financial Statements
+   - Outside of Financial Statements
+
+3. **Forecasting Payoffs**
+   - Measuring Value Added
+   - Forecasting Value Added
+
+4. **Convert Forecasts to a Valuation**
+
+5. **Trading on the Valuation**
+   - Outside Investor: Compare value with price to BUY, SELL, or HOLD
+   - Inside Investor: Compare value with cost to ACCEPT or REJECT strategy
+
+### Analyzing ROCE: The Scheme
+
+[Hierarchical breakdown of ROCE into components:]
+- Return on common equity
+  - Return from operating activities
+    - Return on net operating assets
+      - Profit margin × Asset turnover (+ Financial leverage × Spread)
+        - Gross margin and expense drivers + Individual asset and liability drivers + Net borrowing cost drivers
+
+### Identifying Core Other OI and Unusual Items
+
+**Typical Operating Income Items: Core other OI and Unusual Items**
+
+Core Operating Income:
+- Core sales revenue
+- − Core cost of sales
+- = Core gross margin
+- − Core operating expenses
+- = Core operating income from sales before tax
+- − Tax on core operating income from sales
+  - + Tax as reported
+  - + Tax benefit from net financial expenses
+  - − Tax allocated to core other operating income
+  - − Tax allocated to unusual items
+- = Core operating income from sales
+- + Core other operating income
+  - + Equity income in subsidiaries
+  - + Earnings on pension assets
+  - + Other income not from sales
+  - − Tax on core other income
+- = Core operating income
+- (To be continued...)
+
+(Continued)
+±Unusual Items:
+- − Special charges
+- − Special liability accruals
+- ± Nonrecurring items
+- − Asset write-downs
+- ± Changes in estimates
+- − Start-up costs expensed
+- ± Profits and losses from asset sales
+- − Restructuring charges
+- ± Profits and losses from discontinued operations
+- ± Extraordinary operating items
+- ± Accounting changes
+- ± Unrealized gains and losses on equity investments
+- + Gains from share issues in subsidiaries
+- ± Currency gains and losses
+- ± Derivative gains and losses (operations)
+- − Tax allocated to unusual items
+= Comprehensive Operating Income
+
+
+
+### 7.2. Forecasting Template Steps (from Screenshot 17 - *Only steps 1-7 needed for ReOI Valuation*)
+
+1. Forecast **Sales**.
+2. Forecast **ATO** and calculate **NOA** (`NOA = Sales / ATO`).
+3. Revise Sales forecast for asset constraints if necessary.
+4. Forecast **Core PM** and calculate **Core OI from Sales** (`Core OI = Sales * Core PM`).
+5. Forecast **Other Core OI** and total **Core OI** (`Core OI = Core OI from Sales + Other Core OI`).
+6. Forecast **Unusual Operating Items (UI)**.
+7. Calculate **Total OI** (`OI_t = Core OI_t + UI_t`) and **ReOI** (`ReOI_t = OI_t – (ρ_F – 1) * NOA_{t-1}`).
+8. *(Optional for DCF: Calculate Free Cash Flow (`C – I = OI – ΔNOA`))*
+9. *(Optional for full statements: Forecast net dividend payout (`d`))*
+10. *(Optional for full statements: Calculate financial expenses (`NFE_t = (ρ_D – 1) * NFO_{t-1}`))*
+11. *(Optional for full statements: Update NFO (`NFO_t = NFE_t + d_t – (C – I)_t`))*
+12. *(Optional for full statements: Calculate comprehensive earnings (`Earnings_t = OI_t – NFE_t`))*
+13. *(Optional for full statements: Calculate common stockholders’ equity (`CSE_t = NOA_t – NFO_t = CSE_{t-1} + Earnings_t - d_t`))*
+14. *(Post-Valuation Adjustment: Adjust for stock option overhang)*
+15. *(Post-Valuation Adjustment: Adjust for non-controlling interests)*
+
+
