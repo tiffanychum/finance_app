@@ -1,8 +1,8 @@
 52WeekChange: 0.57595015
 SandP52WeekChange: 0.08081472
 address1: 1 Tesla Road
-ask: 275.58
-askSize: 2
+ask: 273.33
+askSize: 1
 auditRisk: 4
 averageAnalystRating: 2.6 - Hold
 averageDailyVolume10Day: 118643310
@@ -10,8 +10,8 @@ averageDailyVolume3Month: 121452073
 averageVolume: 121452073
 averageVolume10days: 118643310
 beta: 2.434
-bid: 274.0
-bidSize: 6
+bid: 272.26
+bidSize: 3
 boardRisk: 10
 bookValue: 23.184
 city: Austin
@@ -22,12 +22,12 @@ corporateActions: []
 country: United States
 cryptoTradeable: False
 currency: USD
-currentPrice: 274.535
+currentPrice: 272.6924
 currentRatio: 1.996
 customPriceAlertConfidence: HIGH
 dateShortInterest: 1744675200
 dayHigh: 277.92
-dayLow: 273.76
+dayLow: 272.1301
 debtToEquity: 17.407
 displayName: Tesla
 earningsCallTimestampEnd: 1745357400
@@ -52,21 +52,21 @@ exchangeTimezoneName: America/New_York
 exchangeTimezoneShortName: EDT
 executiveTeam: []
 fiftyDayAverage: 261.279
-fiftyDayAverageChange: 13.256012
-fiftyDayAverageChangePercent: 0.050735086
+fiftyDayAverageChange: 11.381012
+fiftyDayAverageChangePercent: 0.043558847
 fiftyTwoWeekChangePercent: 57.595016
 fiftyTwoWeekHigh: 488.54
-fiftyTwoWeekHighChange: -214.005
-fiftyTwoWeekHighChangePercent: -0.43805012
+fiftyTwoWeekHighChange: -215.88
+fiftyTwoWeekHighChangePercent: -0.44188806
 fiftyTwoWeekLow: 167.41
-fiftyTwoWeekLowChange: 107.125
-fiftyTwoWeekLowChangePercent: 0.63989604
+fiftyTwoWeekLowChange: 105.25
+fiftyTwoWeekLowChangePercent: 0.628696
 fiftyTwoWeekRange: 167.41 - 488.54
 financialCurrency: USD
 firstTradeDateMilliseconds: 1277818200000
 floatShares: 2803455867
 forwardEps: 3.24
-forwardPE: 84.733025
+forwardPE: 84.15432
 freeCashflow: 3360000000
 fullExchangeName: NasdaqGS
 fullTimeEmployees: 125665
@@ -89,7 +89,7 @@ lastSplitFactor: 3:1
 longBusinessSummary: Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive; and Energy Generation and Storage. The Automotive segment offers electric vehicles, as well as sells automotive regulatory credits; and non-warranty after-sales vehicle, used vehicles, body shop and parts, supercharging, retail merchandise, and vehicle insurance services. This segment also provides sedans and sport utility vehicles through direct and used vehicle sales, a network of Tesla Superchargers, and in-app upgrades; purchase financing and leasing services; services for electric vehicles through its company-owned service locations and Tesla mobile service technicians; and vehicle limited warranties and extended service plans. The Energy Generation and Storage segment engages in the design, manufacture, installation, sale, and leasing of solar energy generation and energy storage products, and related services to residential, commercial, and industrial customers and utilities through its website, stores, and galleries, as well as through a network of channel partners. This segment also provides services and repairs to its energy product customers, including under warranty; and various financing options to its residential customers. The company was formerly known as Tesla Motors, Inc. and changed its name to Tesla, Inc. in February 2017. Tesla, Inc. was incorporated in 2003 and is headquartered in Austin, Texas.
 longName: Tesla, Inc.
 market: us_market
-marketCap: 884266237952
+marketCap: 878226964480
 marketState: REGULAR
 maxAge: 86400
 messageBoardId: finmb_27444752
@@ -104,10 +104,10 @@ overallRisk: 10
 payoutRatio: 0.0
 phone: 512 516 8177
 previousClose: 275.35
-priceEpsCurrentYear: 143.61905
+priceEpsCurrentYear: 142.63817
 priceHint: 2
-priceToBook: 11.841572
-priceToSalesTrailing12Months: 9.237664
+priceToBook: 11.760697
+priceToSalesTrailing12Months: 9.175665
 profitMargins: 0.063829996
 quickRatio: 1.376
 quoteSourceName: Nasdaq Real Time Price
@@ -115,16 +115,16 @@ quoteType: EQUITY
 recommendationKey: hold
 recommendationMean: 2.60417
 region: US
-regularMarketChange: -0.81500244
-regularMarketChangePercent: -0.2959717
+regularMarketChange: -2.6900024
+regularMarketChangePercent: -0.9767974
 regularMarketDayHigh: 277.92
-regularMarketDayLow: 273.76
-regularMarketDayRange: 273.76 - 277.92
+regularMarketDayLow: 272.1301
+regularMarketDayRange: 272.1301 - 277.92
 regularMarketOpen: 276.815
 regularMarketPreviousClose: 275.35
-regularMarketPrice: 274.535
-regularMarketTime: 1746627661
-regularMarketVolume: 16163950
+regularMarketPrice: 272.66
+regularMarketTime: 1746633875
+regularMarketVolume: 33021803
 returnOnAssets: 0.03724
 returnOnEquity: 0.087740004
 revenueGrowth: -0.092
@@ -156,13 +156,13 @@ tradeable: False
 trailingAnnualDividendRate: 0.0
 trailingAnnualDividendYield: 0.0
 trailingEps: 1.76
-trailingPE: 155.9858
+trailingPE: 154.92046
 trailingPegRatio: 4.2744
 triggerable: True
 twoHundredDayAverage: 292.4607
-twoHundredDayAverageChange: -17.92569
-twoHundredDayAverageChangePercent: -0.061292645
+twoHundredDayAverageChange: -19.80069
+twoHundredDayAverageChangePercent: -0.06770376
 typeDisp: Equity
-volume: 16163950
+volume: 33021971
 website: https://www.tesla.com
 zip: 78725
